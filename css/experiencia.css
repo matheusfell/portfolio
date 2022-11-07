@@ -22,3 +22,44 @@
 .experiencia-texto strong {
     color: #141414;
 }
+
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.empresa::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#a760ff, #ca82ff);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+
+.empresa-ano {
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    color: #525252;
+    font-size: .875rem;
+}
+
+.empresa-titulo {
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.empresa-texto {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #525252;
+}
